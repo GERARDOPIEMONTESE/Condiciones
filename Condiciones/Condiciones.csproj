@@ -72,7 +72,7 @@
       <HintPath>..\packages\FrameworkDAC.1.0.0\lib\net40\FrameworkDAC.dll</HintPath>
     </Reference>
     <Reference Include="GridViewControl">
-      <HintPath>..\..\..\CRM\Cuentas\Cuentas\Librerias\GridViewControl.dll</HintPath>
+      <HintPath>..\..\..\AssistCardPackages\Dlls\GridViewControl.dll</HintPath>
     </Reference>
     <Reference Include="MenuControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MenuControl.1.0.0\lib\net40\MenuControl.dll</HintPath>
