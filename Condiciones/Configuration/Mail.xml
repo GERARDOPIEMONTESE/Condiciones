@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Messaging>
+  <Configuration>
+    <Host>172.17.1.10</Host>
+    <Port>25</Port>
+    <MailFrom>NoReply@assist-card.com</MailFrom>
+    <MailTo>jdelasheras@assist-card.com.ar</MailTo>
+    <MailFromAppearance>NoReply@assist-card.com</MailFromAppearance>
+    <CredentialsUserName>spss@assist-card.com</CredentialsUserName>
+    <CredentialsPwd>servidorspss</CredentialsPwd>
+  </Configuration>
+</Messaging>

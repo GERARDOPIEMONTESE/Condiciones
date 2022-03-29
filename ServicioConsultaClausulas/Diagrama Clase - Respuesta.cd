@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ServicioConsultaClausulas.ClausulaDTO">
+    <Position X="1.75" Y="5.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAQQAIAACAAAAAAAAAAAAAAAAAAAAAAAAMAAQ=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.ClausulaIdiomaDTO">
+    <Position X="1.5" Y="7.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.CondicionEvaluacion">
+    <Position X="7" Y="5.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAA=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.ContenidoClausulaDTO">
+    <Position X="4" Y="4.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BEAQAAgAIAAAAxAAAAABAAAgCAGAAIACAAACFAACAAA=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.ContenidoClausulaRangoDTO">
+    <Position X="4" Y="7.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAGAAEAAAAAAAgAgAAAABAYAEAAAAAAAAgAgAAABA=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.DocumentoDTO">
+    <Position X="6.75" Y="2.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIAAQIAAAAAEAAAAAAAAgBAAAAAABAAiACAAAAQAAAA=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.GrupoClausulaDTO">
+    <Position X="4" Y="2.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAEEAAAAAAAAAAEJAQEBAAABAABABAAAAAE=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.GruposClausulaDTO">
+    <Position X="4.25" Y="0.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.TarifaDTO">
+    <Position X="2" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAABAQAAAAAAQRAAAAAAAAAAEAAACBAAAAAAAAAAA=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServicioConsultaClausulas.LeyendaDTO">
+    <Position X="7" Y="7.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAQAAAAAAAAAIQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IServicioClausulas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

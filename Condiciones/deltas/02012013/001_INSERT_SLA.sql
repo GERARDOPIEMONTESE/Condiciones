@@ -1,0 +1,5 @@
+INSERT INTO TipoGrupoClausula
+VALUES ('SLA')
+
+INSERT INTO TipoClausula
+VALUES ('SLA','SLA')

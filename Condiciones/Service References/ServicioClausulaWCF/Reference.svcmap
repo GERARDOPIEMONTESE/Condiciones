@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bf2d9dd8-d2fa-4b21-b40d-49b8d8c39627" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4691/ServicioClausulas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioClausulas.xsd" MetadataType="Schema" ID="e3bdc30d-ed01-4fc0-a051-a2a6469e53c2" SourceId="1" SourceUrl="http://localhost:4691/ServicioClausulas.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioClausulas1.xsd" MetadataType="Schema" ID="47bafe2b-19ff-4bbe-a6de-5ef08167af5a" SourceId="1" SourceUrl="http://localhost:4691/ServicioClausulas.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioClausulas2.xsd" MetadataType="Schema" ID="87b8adcf-4305-4fcd-bac6-2e1ed9610c50" SourceId="1" SourceUrl="http://localhost:4691/ServicioClausulas.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioClausulas.wsdl" MetadataType="Wsdl" ID="066965c9-a6d9-48a0-978d-61397ff4e918" SourceId="1" SourceUrl="http://localhost:4691/ServicioClausulas.svc?wsdl" />
+    <MetadataFile FileName="ServicioClausulas.disco" MetadataType="Disco" ID="ed2a1e23-2213-4b1e-b7cb-3e7389e5e081" SourceId="1" SourceUrl="http://localhost:4691/ServicioClausulas.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56FC01CA-11C5-4113-B984-A21586452314}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Condiciones</RootNamespace>
+    <AssemblyName>Condiciones</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\..\TFS\Componentes\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaNegocioDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CapaNegocioDatos.1.0.0\lib\net40\CapaNegocioDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="DTOMapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DTOMapper.1.0.0\lib\net40\DTOMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicWsSetup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicWsSetup.1.0.0\lib\net40\DynamicWsSetup.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameworkDAC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FrameworkDAC.1.0.0\lib\net40\FrameworkDAC.dll</HintPath>
+    </Reference>
+    <Reference Include="GridViewControl">
+      <HintPath>..\..\..\CRM\Cuentas\Cuentas\Librerias\GridViewControl.dll</HintPath>
+    </Reference>
+    <Reference Include="MenuControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MenuControl.1.0.0\lib\net40\MenuControl.dll</HintPath>
+    </Reference>
+    <Reference Include="MenuPortalLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MenuPortalLibrary.1.0.0\lib\net40\MenuPortalLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Seguridad.1.0.0\lib\net20\Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerDAC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServerDAC.1.0.0\lib\net40\ServerDAC.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerMSG, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServerMSG.1.0.0\lib\net40\ServerMSG.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerTMP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServerTMP.1.0.0\lib\net40\ServerTMP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WorkFlowLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WorkFlowLibrary.1.0.0\lib\net40\WorkFlowLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\RiesgosDeTerceros.aspx" />
+    <Content Include="Admin\RiesgoDeTercerosAdd.aspx" />
+    <Content Include="Admin\InformacionDeCompaniasDeSeguro.aspx" />
+    <Content Include="Admin\ListaDeCompaniasDeSeguro.aspx" />
+    <Content Include="Controles\Clausulas.ascx" />
+    <Content Include="Controles\TextosResumen.ascx" />
+    <Content Include="Controles\WucDocumento.ascx" />
+    <Content Include="Controles\WucTabsDocumentos.ascx" />
+    <Content Include="CopiaGrupos.aspx" />
+    <Content Include="CSS\default.css" />
+    <Content Include="CSS\Main.css" />
+    <Content Include="deltas\001_Delta_INS.SQL" />
+    <Content Include="deltas\002_Delta_SP.sql" />
+    <Content Include="deltas\003_Delta_UPD.SQL" />
+    <Content Include="deltas\004_Delta_SP.sql" />
+    <Content Include="deltas\005_Delta_SP.sql" />
+    <Content Include="deltas\006_delta_DA.sql" />
+    <Content Include="deltas\007_delta_DA ROLLBACK.sql" />
+    <Content Include="deltas\007_delta_DA.sql" />
+    <Content Include="deltas\008_delta_DA ROLLBACK.sql" />
+    <Content Include="deltas\02012013\001_INSERT_SLA.sql" />
+    <Content Include="deltas\02012013\002_CREATE_GrupoClausula_SLA_Tx_AgenciaSucursal.sql" />
+    <Content Include="deltas\02012013\003_ALTER_Sucursal_Tx_CodigoCuenta_Razon.sql" />
+    <Content Include="deltas\02012013\004_CREATE_Sucursal_Tx_GrupoClausulaSLA.sql" />
+    <Content Include="deltas\02012013\005_CREATE_GrupoClausula_Tx_AgenciaSucursal.sql" />
+    <Content Include="deltas\035_delta_SP_Bug.sql" />
+    <Content Include="deltas\036_delta_DA.sql" />
+    <Content Include="deltas\037_delta_DA - Rollback.sql" />
+    <Content Include="deltas\037_delta_DA.sql" />
+    <Content Include="deltas\change_log.txt" />
+    <Content Include="deltas\delta_046_DA.sql" />
+    <Content Include="deltas\delta_038_DA.sql" />
+    <Content Include="deltas\delta_039_DA.sql" />
+    <Content Include="deltas\delta_040_DA.sql" />
+    <Content Include="deltas\delta_041_DA.sql" />
+    <Content Include="deltas\delta_043_044_045_ROLLBACK_DA.sql" />
+    <Content Include="deltas\delta_043_DA.sql" />
+    <Content Include="deltas\delta_044_DA.sql" />
+    <Content Include="deltas\delta_045_DA.sql" />
+    <Content Include="GrupoClausulas\GrupoClausula_Datos.aspx" />
+    <Content Include="GrupoClausulas\GrupoClausula_InformacionAdicional.aspx" />
+    <Content Include="GrupoClausulas\SLA\GrupoClausulaSLA_Datos.aspx" />
+    <Content Include="GrupoClausulas\SLA\ListaDeGrupoClausulasSLA.aspx" />
+    <Content Include="IMG\Delete.gif" />
+    <Content Include="IMG\blue_btn.png" />
+    <Content Include="IMG\Delete-old.gif" />
+    <Content Include="IMG\Down.GIF" />
+    <Content Include="IMG\green_btn.png" />
+    <Content Include="IMG\grey_btn.png" />
+    <Content Include="IMG\Editar.png" />
+    <Content Include="IMG\Left.GIF" />
+    <Content Include="IMG\red_btn.png" />
+    <Content Include="IMG\Right.GIF" />
+    <Content Include="IMG\Icon_find.gif" />
+    <Content Include="IMG\Up.GIF" />
+    <Content Include="InformacionDeClausula.aspx" />
+    <Content Include="GrupoClausulas\GrupoClausula_Clausulas.aspx" />
+    <Content Include="Documento\InformacionDeDocumento.aspx" />
+    <Content Include="Js\jquery-3.3.1.min.js" />
+    <Content Include="Textos\InformacionDeTexto.aspx" />
+    <Content Include="ListaDeClausulas.aspx" />
+    <Content Include="Documento\ListaDeDocumentos.aspx" />
+    <Content Include="Textos\ListaDeTexto.aspx" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Condiciones.pubxml" />
+    <None Include="Web References\ClausulasWSPreProd\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ClausulasWSPreProd\ServicioClausulasWS.wsdl" />
+    <None Include="Web References\ClausulasWSTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ClausulasWSTest\ServicioClausulasWS.wsdl" />
+    <None Include="Web References\com.assist-card.serviciocondiciones\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.assist-card.serviciocondiciones\ServicioClausulasWS.disco" />
+    <None Include="Web References\ClausulasWSTest\ServicioClausulasWS.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\RiesgosDeTerceros.aspx.cs">
+      <DependentUpon>RiesgosDeTerceros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RiesgosDeTerceros.aspx.designer.cs">
+      <DependentUpon>RiesgosDeTerceros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RiesgoDeTercerosAdd.aspx.cs">
+      <DependentUpon>RiesgoDeTercerosAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RiesgoDeTercerosAdd.aspx.designer.cs">
+      <DependentUpon>RiesgoDeTercerosAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InformacionDeAdministrador.aspx.cs">
+      <DependentUpon>InformacionDeAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InformacionDeAdministrador.aspx.designer.cs">
+      <DependentUpon>InformacionDeAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InformacionDeCompaniasDeSeguro.aspx.cs">
+      <DependentUpon>InformacionDeCompaniasDeSeguro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InformacionDeCompaniasDeSeguro.aspx.designer.cs">
+      <DependentUpon>InformacionDeCompaniasDeSeguro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InformacionDeProducto.aspx.cs">
+      <DependentUpon>InformacionDeProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InformacionDeProducto.aspx.designer.cs">
+      <DependentUpon>InformacionDeProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InformacionDeTarifa.aspx.cs">
+      <DependentUpon>InformacionDeTarifa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InformacionDeTarifa.aspx.designer.cs">
+      <DependentUpon>InformacionDeTarifa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ListaDeAdministrador.aspx.cs">
+      <DependentUpon>ListaDeAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ListaDeAdministrador.aspx.designer.cs">
+      <DependentUpon>ListaDeAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ListaDeCompaniasDeSeguro.aspx.cs">
+      <DependentUpon>ListaDeCompaniasDeSeguro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ListaDeCompaniasDeSeguro.aspx.designer.cs">
+      <DependentUpon>ListaDeCompaniasDeSeguro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ListaDeProductos.aspx.cs">
+      <DependentUpon>ListaDeProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ListaDeProductos.aspx.designer.cs">
+      <DependentUpon>ListaDeProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ListaDeTarifas.aspx.cs">
+      <DependentUpon>ListaDeTarifas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ListaDeTarifas.aspx.designer.cs">
+      <DependentUpon>ListaDeTarifas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\WucDocumento.ascx.cs">
+      <DependentUpon>WucDocumento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\WucDocumento.ascx.designer.cs">
+      <DependentUpon>WucDocumento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\WucTabsDocumentos.ascx.cs">
+      <DependentUpon>WucTabsDocumentos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\WucTabsDocumentos.ascx.designer.cs">
+      <DependentUpon>WucTabsDocumentos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CopiaGrupos.aspx.cs">
+      <DependentUpon>CopiaGrupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CopiaGrupos.aspx.designer.cs">
+      <DependentUpon>CopiaGrupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoClausulas\SLA\GrupoClausulaSLA_Datos.aspx.cs">
+      <DependentUpon>GrupoClausulaSLA_Datos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GrupoClausulas\SLA\GrupoClausulaSLA_Datos.aspx.designer.cs">
+      <DependentUpon>GrupoClausulaSLA_Datos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoClausulas\SLA\ListaDeGrupoClausulasSLA.aspx.cs">
+      <DependentUpon>ListaDeGrupoClausulasSLA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GrupoClausulas\SLA\ListaDeGrupoClausulasSLA.aspx.designer.cs">
+      <DependentUpon>ListaDeGrupoClausulasSLA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ClausulasWSPreProd\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ClausulasWSTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.assist-card.serviciocondiciones\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\DTO\AdjuntoDTO.cs" />
+    <Content Include="App_Code\DTO\ClausulaDTO.cs" />
+    <Content Include="App_Code\DTO\GrupoClausulaPantallaDTO.cs" />
+    <Compile Include="App_Code\PermisosConstant.cs" />
+    <Compile Include="App_Code\SessionDataHandler.cs" />
+    <Compile Include="Consulta\InformacionGrupoCondiciones.aspx.cs">
+      <DependentUpon>InformacionGrupoCondiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta\InformacionGrupoCondiciones.aspx.designer.cs">
+      <DependentUpon>InformacionGrupoCondiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\ListaDeGrupoCondiciones.aspx.cs">
+      <DependentUpon>ListaDeGrupoCondiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta\ListaDeGrupoCondiciones.aspx.designer.cs">
+      <DependentUpon>ListaDeGrupoCondiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Clausulas.ascx.cs">
+      <DependentUpon>Clausulas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Clausulas.ascx.designer.cs">
+      <DependentUpon>Clausulas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\SessionController.ascx.cs">
+      <DependentUpon>SessionController.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\SessionController.ascx.designer.cs">
+      <DependentUpon>SessionController.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\TextosResumen.ascx.cs">
+      <DependentUpon>TextosResumen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\TextosResumen.ascx.designer.cs">
+      <DependentUpon>TextosResumen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\WucCondicionClausula.ascx.cs">
+      <DependentUpon>WucCondicionClausula.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\WucCondicionClausula.ascx.designer.cs">
+      <DependentUpon>WucCondicionClausula.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\WucContenidoClausula.ascx.cs">
+      <DependentUpon>WucContenidoClausula.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\WucContenidoClausula.ascx.designer.cs">
+      <DependentUpon>WucContenidoClausula.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\WucContenidosClausula.ascx.cs">
+      <DependentUpon>WucContenidosClausula.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\WucContenidosClausula.ascx.designer.cs">
+      <DependentUpon>WucContenidosClausula.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\WucLeyenda.ascx.cs">
+      <DependentUpon>WucLeyenda.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\WucLeyenda.ascx.designer.cs">
+      <DependentUpon>WucLeyenda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documento\DescargaDeDocumento.aspx.cs">
+      <DependentUpon>DescargaDeDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documento\DescargaDeDocumento.aspx.designer.cs">
+      <DependentUpon>DescargaDeDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documento\InformacionDeDocumento.aspx.designer.cs">
+      <DependentUpon>InformacionDeDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoClausulas\GrupoClausula_Datos.aspx.cs">
+      <DependentUpon>GrupoClausula_Datos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GrupoClausulas\GrupoClausula_Datos.aspx.designer.cs">
+      <DependentUpon>GrupoClausula_Datos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoClausulas\GrupoClausula_InformacionAdicional.aspx.cs">
+      <DependentUpon>GrupoClausula_InformacionAdicional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GrupoClausulas\GrupoClausula_InformacionAdicional.aspx.designer.cs">
+      <DependentUpon>GrupoClausula_InformacionAdicional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoClausulas\ListaDeGrupoClausulas.aspx.cs">
+      <DependentUpon>ListaDeGrupoClausulas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GrupoClausulas\ListaDeGrupoClausulas.aspx.designer.cs">
+      <DependentUpon>ListaDeGrupoClausulas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionDeClausula.aspx.cs">
+      <DependentUpon>InformacionDeClausula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformacionDeClausula.aspx.designer.cs">
+      <DependentUpon>InformacionDeClausula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoClausulas\GrupoClausula_Clausulas.aspx.cs">
+      <DependentUpon>GrupoClausula_Clausulas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GrupoClausulas\GrupoClausula_Clausulas.aspx.designer.cs">
+      <DependentUpon>GrupoClausula_Clausulas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documento\InformacionDeDocumento.aspx.cs">
+      <DependentUpon>InformacionDeDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformacionDeGrupoClausulas.aspx.cs">
+      <DependentUpon>InformacionDeGrupoClausulas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformacionDeGrupoClausulas.aspx.designer.cs">
+      <DependentUpon>InformacionDeGrupoClausulas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaWS.aspx.cs">
+      <DependentUpon>PruebaWS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PruebaWS.aspx.designer.cs">
+      <DependentUpon>PruebaWS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMaster.Master.cs">
+      <DependentUpon>SiteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMaster.Master.designer.cs">
+      <DependentUpon>SiteMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Textos\InformacionDeTexto.aspx.cs">
+      <DependentUpon>InformacionDeTexto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Textos\InformacionDeTexto.aspx.designer.cs">
+      <DependentUpon>InformacionDeTexto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDeClausulas.aspx.cs">
+      <DependentUpon>ListaDeClausulas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaDeClausulas.aspx.designer.cs">
+      <DependentUpon>ListaDeClausulas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Estrategias\ManejoArbol.cs" />
+    <Compile Include="Documento\ListaDeDocumentos.aspx.cs">
+      <DependentUpon>ListaDeDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documento\ListaDeDocumentos.aspx.designer.cs">
+      <DependentUpon>ListaDeDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Textos\ListaDeTexto.aspx.cs">
+      <DependentUpon>ListaDeTexto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Textos\ListaDeTexto.aspx.designer.cs">
+      <DependentUpon>ListaDeTexto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcesosMasivos\ListaDeGruposClausulasMasiva.aspx.cs">
+      <DependentUpon>ListaDeGruposClausulasMasiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcesosMasivos\ListaDeGruposClausulasMasiva.aspx.designer.cs">
+      <DependentUpon>ListaDeGruposClausulasMasiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Code\Utilitario.cs" />
+    <Compile Include="App_Code\TreeViewUtils.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Sorter.cs" />
+    <Compile Include="Servicios\ServicioAutocompletarSufijo.asmx.cs">
+      <DependentUpon>ServicioAutocompletarSufijo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Servicios\ServicioAutocompletarTarifa.asmx.cs">
+      <DependentUpon>ServicioAutocompletarTarifa.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web References\ClausulasWSLocalHost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\InformacionGrupoCondiciones.aspx" />
+    <Content Include="Consulta\ListaDeGrupoCondiciones.aspx" />
+    <Content Include="Controles\WucCondicionClausula.ascx" />
+    <Content Include="Controles\WucContenidoClausula.ascx" />
+    <Content Include="Controles\WucContenidosClausula.ascx" />
+    <Content Include="Controles\WucLeyenda.ascx" />
+    <Content Include="Documento\DescargaDeDocumento.aspx" />
+    <Content Include="GrupoClausulas\ListaDeGrupoClausulas.aspx" />
+    <Content Include="IMG\btn_minus.gif" />
+    <Content Include="IMG\btn_more.gif" />
+    <Content Include="IMG\Copiar.gif" />
+    <Content Include="IMG\Editar-old.png" />
+    <Content Include="IMG\Icon_find-old.gif" />
+    <Content Include="IMG\method.gif" />
+    <Content Include="InformacionDeGrupoClausulas.aspx" />
+    <Content Include="ProcesosMasivos\ListaDeGruposClausulasMasiva.aspx" />
+    <Content Include="Servicios\ServicioAutocompletarSufijo.asmx" />
+    <Content Include="Servicios\ServicioAutocompletarTarifa.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\InformacionDeAdministrador.aspx" />
+    <Content Include="Admin\InformacionDeProducto.aspx" />
+    <Content Include="Admin\InformacionDeTarifa.aspx" />
+    <Content Include="Admin\ListaDeAdministrador.aspx" />
+    <Content Include="Admin\ListaDeProductos.aspx" />
+    <Content Include="Admin\ListaDeTarifas.aspx" />
+    <Content Include="Configuration\Mail.xml" />
+    <Content Include="Consulta\Web.config" />
+    <Content Include="Controles\SessionController.ascx" />
+    <Content Include="deltas\change.log" />
+    <Content Include="Documento\Web.config" />
+    <None Include="deltas\001_delta_ES_T.sql" />
+    <None Include="deltas\002_delta_ES_SP.sql" />
+    <None Include="deltas\003_delta_ES_SP.sql" />
+    <None Include="deltas\004_delta_ES_SP.sql" />
+    <None Include="deltas\005_delta_ES_SP.sql" />
+    <None Include="deltas\006_delta_ES_IDX.sql" />
+    <None Include="deltas\007_delta_ES.sql" />
+    <None Include="deltas\008_delta_DA.sql" />
+    <None Include="deltas\009_delta_ES.sql" />
+    <None Include="deltas\010_delta_IDX.sql" />
+    <None Include="deltas\011_delta_SP.sql" />
+    <None Include="deltas\012_delta_SP.sql" />
+    <None Include="deltas\013_delta_ES.sql" />
+    <None Include="deltas\014_delta_SP.sql" />
+    <None Include="deltas\015_delta_SP.sql" />
+    <None Include="deltas\016_delta_SP.sql" />
+    <None Include="deltas\017_delta_DA.sql" />
+    <None Include="deltas\018_delta_DA.sql" />
+    <None Include="deltas\019_delta_ES.sql" />
+    <None Include="deltas\020_delta_ES.sql" />
+    <None Include="deltas\021_delta_SP.sql" />
+    <None Include="deltas\022_delta_SP.sql" />
+    <None Include="deltas\023_delta_SP.sql" />
+    <None Include="deltas\024_delta_SP.sql" />
+    <None Include="deltas\025_delta_SP.sql" />
+    <None Include="deltas\027_delta_SP.sql" />
+    <None Include="deltas\028_delta_SP.sql" />
+    <None Include="deltas\029_delta_DA.sql" />
+    <None Include="deltas\030_delta_SP.sql" />
+    <None Include="deltas\031_delta_SP.sql.sql" />
+    <None Include="deltas\032_delta_SP.sql" />
+    <None Include="deltas\033_delta_SP.sql" />
+    <None Include="deltas\034_delta_SP.sql" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ClausulasWSLocalHost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ClausulasWSLocalHost\ServicioClausulasWS.wsdl" />
+    <Content Include="PruebaWS.aspx" />
+    <Content Include="IMG\pdf.gif" />
+    <Content Include="SiteMaster.Master" />
+    <Content Include="Js\Condiciones.js" />
+    <Content Include="CSS\Espera.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="IMG\error.gif" />
+    <Content Include="IMG\excel.gif" />
+    <Content Include="IMG\help.gif" />
+    <Content Include="IMG\icon_component.gif" />
+    <Content Include="IMG\icon_package.gif" />
+    <Content Include="IMG\icon_world.gif" />
+    <Content Include="IMG\list_components.gif" />
+    <Content Include="IMG\loading.gif" />
+    <None Include="Web References\ClausulasWSLocalHost\ServicioClausulasWS.disco" />
+    <Content Include="Web.sitemap" />
+    <None Include="Web References\com.assist-card.serviciocondiciones\ServicioClausulasWS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Backend\BackendCondiciones.csproj">
+      <Project>{FEAB6DD3-D801-4500-B03E-65ADC1333B15}</Project>
+      <Name>BackendCondiciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CondicionesParser\CondicionesParser.csproj">
+      <Project>{2E8AF566-EFFA-4715-872A-6E7B898CAE16}</Project>
+      <Name>CondicionesParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.17.1.81:8027/ServicioClausulasWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ClausulasWSTest\</RelPath>
+      <UpdateFromURL>http://172.17.1.81:8027/ServicioClausulasWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Condiciones_ClausulasWSTest_ServicioClausulasWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://benefitsws.pre.assist-card.com/ServicioClausulasWS.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ClausulasWSPreProd\</RelPath>
+      <UpdateFromURL>http://benefitsws.pre.assist-card.com/ServicioClausulasWS.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Condiciones_ClausulasWSPreProd_ServicioClausulasWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:4736/ServicioClausulasWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ClausulasWSLocalHost\</RelPath>
+      <UpdateFromURL>http://localhost:4736/ServicioClausulasWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Condiciones_ClausulasWSLocalHost_ServicioClausulasWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://serviciocondiciones.assist-card.com/ServicioClausulasWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.assist-card.serviciocondiciones\</RelPath>
+      <UpdateFromURL>http://serviciocondiciones.assist-card.com/ServicioClausulasWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Condiciones_com_assist_card_serviciocondiciones_ServicioClausulasWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\App_LocalResources\InformacionGrupoCondiciones.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\App_LocalResources\InformacionGrupoCondiciones.aspx.en-US.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\App_LocalResources\InformacionGrupoCondiciones.aspx.pt-BR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\App_LocalResources\InformacionGrupoCondiciones.aspx.es-AR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\App_LocalResources\ListaDeGrupoCondiciones.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\App_LocalResources\ListaDeGrupoCondiciones.aspx.es-AR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\App_LocalResources\ListaDeGrupoCondiciones.aspx.en-US.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Consulta\App_LocalResources\ListaDeGrupoCondiciones.aspx.pt-BR.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15142</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PruebaCondiciones.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PruebaCondiciones_ServicioClausulaTestingWS_ServicioClausulasWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.17.1.111:8027/ServicioClausulasWS.asmx</Value>
+    </Setting>
+    <Setting Name="PruebaCondiciones_ServicioClausulasWSProduccion_ServicioClausulasWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://serviciocondiciones.assist-card.com/ServicioClausulasWS.asmx</Value>
+    </Setting>
+    <Setting Name="PruebaCondiciones_ServicioTarifaTestingWS_ServicioTarifaWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.17.0.111:8027/ServicioTarifaWS.asmx</Value>
+    </Setting>
+    <Setting Name="PruebaCondiciones_ServicioTarifaWS_ServicioTarifaWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:4179/ServicioTarifaWS.asmx</Value>
+    </Setting>
+    <Setting Name="PruebaCondiciones_PREND_Servicios" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://prendarios.prestamolibre.com.ar/prendariowsmobile/mobile.asmx</Value>
+    </Setting>
+    <Setting Name="PruebaCondiciones_ServicioClausulaWS_ServicioClausulasWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:3046/ServicioClausulasWS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="Condiciones.SiteMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder runat="server" ID="head">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Espera.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/Main.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" language="javascript">
+        function Cerrar() {
+            window.close();
+        }
+        function Redireccionar() {
+            window.location = 'http://portal.assist-card.com/Usuarios/LogIn.aspx';
+                                                       
+        }
+        function RedireccionarConTiempo() {
+
+            setTimeout("Redireccionar()", 8000);
+        
+         }
+
+
+    </script>
+    <script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script> 
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <asp:TextBox runat="server" ID="txtURLLogin" Visible="false"></asp:TextBox>
+     <asp:ScriptManager ID="ScriptManager1" runat="server" />
+     <asp:SiteMapPath ID="SiteMap" runat="server" CssClass="Text_SiteMap" />
+        <asp:Panel ID="panelUpdateProgress" runat="server" CssClass="updateProgress" Visible="false">
+            <div style="position: relative; top: 30%; text-align: center;">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="../IMG/error.gif" alt="Ha expirado la sesion" />
+                            Ha expirado la sesión.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Por favor haga click en Login para autenticarse nuevamente o espera a ser redireccionado
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="button" id="btnCerrar" value="Cerrar"  onclick="Cerrar();"/>
+                        <input type="button" id="btnLogin" value="Login" onclick="Redireccionar();" />
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </asp:Panel>
+       
+        <ajx:modalpopupextender ID="ModalProgress" runat="server" TargetControlID="panelUpdateProgress"
+            PopupControlID="panelUpdateProgress" BackgroundCssClass="modalBackground" 
+            DropShadow="true" OkControlID="btnLogin">
+        </ajx:modalpopupextender>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+           <asp:UpdateProgress ID="UpEsperaAccion" runat="server">
+            <ProgressTemplate>
+                <div class="ProgressBanner">
+                    <img src="../IMG/loading.gif" alt="Cargando Página" />Cargando Página ...</div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+    </div>
+    </form>
+</body>
+</html>

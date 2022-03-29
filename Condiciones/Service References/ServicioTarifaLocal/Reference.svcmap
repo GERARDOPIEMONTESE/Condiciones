@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ea9840c9-c7e5-40fc-a3dc-6b93f9abdeab" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1807/ServicioTarifa.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioTarifa.xsd" MetadataType="Schema" ID="ba477bd3-9acb-4f0c-a76d-06b08acdce2c" SourceId="1" SourceUrl="http://localhost:1807/ServicioTarifa.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioTarifa1.xsd" MetadataType="Schema" ID="ce10f782-6943-4705-88ee-b5a2a09ad818" SourceId="1" SourceUrl="http://localhost:1807/ServicioTarifa.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioTarifa2.xsd" MetadataType="Schema" ID="78bc44c4-0f7d-41e0-92b2-2e86f3bbd624" SourceId="1" SourceUrl="http://localhost:1807/ServicioTarifa.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioTarifa.disco" MetadataType="Disco" ID="28f1581d-ed34-4656-898d-b57b4d0e225f" SourceId="1" SourceUrl="http://localhost:1807/ServicioTarifa.svc?disco" />
+    <MetadataFile FileName="ServicioTarifa.wsdl" MetadataType="Wsdl" ID="3333332c-d67c-4a22-b45b-7e5617d9ac3e" SourceId="1" SourceUrl="http://localhost:1807/ServicioTarifa.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

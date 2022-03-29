@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CondicionesMigracion.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CnxStrCondiciones" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=172.17.0.111\ANDROMEDA;Initial Catalog=Condiciones;User ID=sa;Password=kingkong;" providerName="System.Data.SqlClient</Value>
+    </Setting>
+    <Setting Name="CnxStrPortal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=172.17.0.111\ANDROMEDA;Initial Catalog=Portal;User ID=sa;Password=kingkong;" providerName="System.Data.SqlClient</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

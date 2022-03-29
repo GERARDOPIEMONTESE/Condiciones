@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEAB6DD3-D801-4500-B03E-65ADC1333B15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BackendCondiciones</RootNamespace>
+    <AssemblyName>BackendCondiciones</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaNegocioDatos, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CapaNegocioDatos.1.0.1\lib\net40\CapaNegocioDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="DTOMapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DTOMapper.1.0.0\lib\net40\DTOMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicWsSetup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicWsSetup.1.0.0\lib\net40\DynamicWsSetup.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameworkDAC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FrameworkDAC.1.0.0\lib\net40\FrameworkDAC.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Seguridad.1.0.0\lib\net20\Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerDAC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServerDAC.1.0.0\lib\net40\ServerDAC.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerMSG, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServerMSG.1.0.0\lib\net40\ServerMSG.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerTMP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServerTMP.1.0.0\lib\net40\ServerTMP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WorkFlowLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WorkFlowLibrary.1.0.0\lib\net40\WorkFlowLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contextos\ContextoGrupoPorRango.cs" />
+    <Compile Include="Contextos\ContextoModificacionDocumento.cs" />
+    <Compile Include="Contextos\ContextoModificacionLeyenda.cs" />
+    <Compile Include="Contextos\ContextoModificacionMasiva.cs" />
+    <Compile Include="Contextos\ContextoModificacionRango.cs" />
+    <Compile Include="Datos\DAORiesgoTerceros.cs" />
+    <Compile Include="Datos\DAOCompaniaSeguro.cs" />
+    <Compile Include="Datos\DAOGrupoClausulaSLADTO.cs" />
+    <Compile Include="Datos\DAOAsociacionContenidoClausula.cs" />
+    <Compile Include="Datos\DAOAsociacionDocumento.cs" />
+    <Compile Include="Datos\DAOAsociacionTexto.cs" />
+    <Compile Include="Datos\DAOAyuda.cs" />
+    <Compile Include="Datos\DAOClausula.cs" />
+    <Compile Include="Datos\DAOClausula_Idioma.cs" />
+    <Compile Include="Datos\DAOContenidoClausula.cs" />
+    <Compile Include="Datos\DAOContenidoClausulaRango.cs" />
+    <Compile Include="Datos\DAODocumento.cs" />
+    <Compile Include="Datos\DAODocumentoDTO.cs" />
+    <Compile Include="Datos\DAOGrupoClausula.cs" />
+    <Compile Include="Datos\DAOGrupoClausulaTarifaDTO.cs" />
+    <Compile Include="Datos\DAOIdioma.cs" />
+    <Compile Include="Datos\DAOLeyenda.cs" />
+    <Compile Include="Datos\DAOObjetoAgrupadorClausula.cs" />
+    <Compile Include="Datos\DAOPais.cs" />
+    <Compile Include="Datos\DAOProducto.cs" />
+    <Compile Include="Datos\DAOSolicitudModificacionMasiva.cs" />
+    <Compile Include="Datos\DAOSolicitudModificacionMasivaDTO.cs" />
+    <Compile Include="Datos\DAOTarifa.cs" />
+    <Compile Include="Datos\DAOTexto.cs" />
+    <Compile Include="Datos\DAOTextoDTO.cs" />
+    <Compile Include="Datos\DAOTexto_Idioma.cs" />
+    <Compile Include="Datos\DAOTipoAsociacionDocumento.cs" />
+    <Compile Include="Datos\DAOTipoClausula.cs" />
+    <Compile Include="Datos\DAOTipoCobertura.cs" />
+    <Compile Include="Datos\DAOTipoContenidoImpresion.cs" />
+    <Compile Include="Datos\DAOTipoDestino.cs" />
+    <Compile Include="Datos\DAOTipoDocumento.cs" />
+    <Compile Include="Datos\DAOTipoGrupoClausula.cs" />
+    <Compile Include="Datos\DAOTipoImpresionClausula.cs" />
+    <Compile Include="Datos\DAOTipoModalidad.cs" />
+    <Compile Include="Datos\DAOTipoOperacion.cs" />
+    <Compile Include="Datos\DAOTipoPlan.cs" />
+    <Compile Include="Datos\DAOTipoTexto.cs" />
+    <Compile Include="Datos\DAOTipoTextoResumen.cs" />
+    <Compile Include="Datos\DAOValidadores.cs" />
+    <Compile Include="Datos\DAOValidezTerritorial.cs" />
+    <Compile Include="Datos\DAOValidezTerritorialClausula.cs" />
+    <Compile Include="Dominio\AsociacionContenidoClausula.cs" />
+    <Compile Include="Dominio\AsociacionDocumento.cs" />
+    <Compile Include="Dominio\AsociacionTexto.cs" />
+    <Compile Include="Dominio\Ayuda.cs" />
+    <Compile Include="Dominio\Clausula.cs" />
+    <Compile Include="Dominio\Clausula_Idioma.cs" />
+    <Compile Include="Dominio\CompaniaSeguro.cs" />
+    <Compile Include="Dominio\ContenidoClausula.cs" />
+    <Compile Include="Dominio\ContenidoClausulaRango.cs" />
+    <Compile Include="Dominio\RiesgoTerceros.cs" />
+    <Compile Include="Dominio\Documento.cs" />
+    <Compile Include="Dominio\GrupoClausula.cs" />
+    <Compile Include="Dominio\Idioma.cs" />
+    <Compile Include="Dominio\Leyenda.cs" />
+    <Compile Include="Dominio\ObjetoAgrupadorClausula.cs" />
+    <Compile Include="Dominio\Pais.cs" />
+    <Compile Include="Dominio\Producto.cs" />
+    <Compile Include="Dominio\SolicitudModificacionMasiva.cs" />
+    <Compile Include="Dominio\Tarifa.cs" />
+    <Compile Include="Dominio\Texto.cs" />
+    <Compile Include="Dominio\Texto_Idioma.cs" />
+    <Compile Include="Dominio\TipoAsociacionDocumento.cs" />
+    <Compile Include="Dominio\TipoClausula.cs" />
+    <Compile Include="Dominio\TipoCobertura.cs" />
+    <Compile Include="Dominio\TipoContenidoImpresion.cs" />
+    <Compile Include="Dominio\TipoDestino.cs" />
+    <Compile Include="Dominio\TipoDocumento.cs" />
+    <Compile Include="Dominio\TipoGrupoClausula.cs" />
+    <Compile Include="Dominio\TipoImpresionClausula.cs" />
+    <Compile Include="Dominio\TipoModalidad.cs" />
+    <Compile Include="Dominio\TipoOperacion.cs" />
+    <Compile Include="Dominio\TipoPlan.cs" />
+    <Compile Include="Dominio\TipoTexto.cs" />
+    <Compile Include="Dominio\TipoTextoResumen.cs" />
+    <Compile Include="Dominio\Validadores.cs" />
+    <Compile Include="Dominio\ValidezTerritorial.cs" />
+    <Compile Include="Dominio\ValidezTerritorialClausula.cs" />
+    <Compile Include="DTO\AdjuntoDTO.cs" />
+    <Compile Include="DTO\AsociacionDocumentoDTO.cs" />
+    <Compile Include="DTO\ClausulaDTO.cs" />
+    <Compile Include="DTO\ClausulaIdiomaDTO.cs" />
+    <Compile Include="DTO\ConsultaCondicionesDTO.cs" />
+    <Compile Include="DTO\ContenidoRangoDTO.cs" />
+    <Compile Include="DTO\GrupoClausulasImpresasDTO.cs" />
+    <Compile Include="DTO\GrupoClausulaSLADTO.cs" />
+    <Compile Include="DTO\DocumentoDTO.cs" />
+    <Compile Include="DTO\GrupoClausulaDTO.cs" />
+    <Compile Include="DTO\GrupoClausulaListaDTO.cs" />
+    <Compile Include="DTO\GrupoClausulaTarifaDTO.cs" />
+    <Compile Include="DTO\GrupoCondicionesRangoDTO.cs" />
+    <Compile Include="DTO\PaisDTO.cs" />
+    <Compile Include="DTO\SolicitudModificacionMasivaDTO.cs" />
+    <Compile Include="DTO\TarifaDTO.cs" />
+    <Compile Include="DTO\TextoDTO.cs" />
+    <Compile Include="DTO\TextoResumenDTO.cs" />
+    <Compile Include="DTO\TipoEntidadDTO.cs" />
+    <Compile Include="Homes\AsociacionDocumentoHome.cs" />
+    <Compile Include="Homes\AsociacionTextoHome.cs" />
+    <Compile Include="Homes\AyudaHome.cs" />
+    <Compile Include="Homes\ClausulaHome.cs" />
+    <Compile Include="Homes\Clausula_IdiomaHome.cs" />
+    <Compile Include="Homes\CompaniaSeguroHome.cs" />
+    <Compile Include="Homes\ContenidoClausulaHome.cs" />
+    <Compile Include="Homes\ContenidoClausulaRangoHome.cs" />
+    <Compile Include="Homes\RiesgoTercerosHome.cs" />
+    <Compile Include="Homes\DocumentoHome.cs" />
+    <Compile Include="Homes\GrupoClausulaHome.cs" />
+    <Compile Include="DTO\GrupoCondicionesDTO.cs" />
+    <Compile Include="Homes\GrupoCondicionesHome.cs" />
+    <Compile Include="Homes\IdiomaHome.cs" />
+    <Compile Include="Homes\PaisHome.cs" />
+    <Compile Include="Homes\ProductoHome.cs" />
+    <Compile Include="Homes\SolicitudModificacionMasivaHome.cs" />
+    <Compile Include="Homes\TarifaHome.cs" />
+    <Compile Include="Homes\TextoHome.cs" />
+    <Compile Include="Homes\TipoAsociacionDocumentoHome.cs" />
+    <Compile Include="Homes\TipoClausulaHome.cs" />
+    <Compile Include="Homes\TipoCoberturaHome.cs" />
+    <Compile Include="Homes\TipoContenidoImpresionHome.cs" />
+    <Compile Include="Homes\TipoDestinoHome.cs" />
+    <Compile Include="Homes\TipoDocumentoHome.cs" />
+    <Compile Include="Homes\TipoGrupoClausulaHome.cs" />
+    <Compile Include="Homes\TipoImpresionClausulaHome.cs" />
+    <Compile Include="Homes\TipoModalidadHome.cs" />
+    <Compile Include="Homes\TipoObjetoCodificadoHome.cs" />
+    <Compile Include="Homes\TipoOperacionHome.cs" />
+    <Compile Include="Homes\TipoPlanHome.cs" />
+    <Compile Include="Homes\TipoTextoHome.cs" />
+    <Compile Include="Homes\TipoTextoResumenHome.cs" />
+    <Compile Include="Homes\ValidadoresHome.cs" />
+    <Compile Include="Homes\ValidezTerritorialClausulaHome.cs" />
+    <Compile Include="Homes\ValidezTerritorialHome.cs" />
+    <Compile Include="Interfaces\ICopiable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\IServicioClausulas.cs" />
+    <Compile Include="Servicios\LaPapaService.cs" />
+    <Compile Include="Servicios\ServicioClausulas.cs" />
+    <Compile Include="Servicios\ServicioConversionXml.cs" />
+    <Compile Include="Servicios\ServicioGrupoClausula.cs" />
+    <Compile Include="Servicios\ServicioModificacionMasiva.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CondicionesParser\CondicionesParser.csproj">
+      <Project>{2E8AF566-EFFA-4715-872A-6E7B898CAE16}</Project>
+      <Name>CondicionesParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Deltas\007_delta_DA ROLLBACK.sql" />
+    <Content Include="Deltas\008_delta_DA ROLLBACK.sql" />
+    <Content Include="Libs\ServerDAC.dll" />
+    <Content Include="Libs\ServerMSG.dll" />
+    <Content Include="Libs\ServerTMP.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

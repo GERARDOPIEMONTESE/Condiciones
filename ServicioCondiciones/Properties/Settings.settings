@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ServicioCondiciones.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LinkDocumento" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2493/Documento/DescargaDeDocumento.aspx?IdDocumento=</Value>
+    </Setting>
+    <Setting Name="Ubicacion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:/Aplicaciones/Emisiones/Condiciones/CondicionesParser/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

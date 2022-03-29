@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CondicionesParser.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Mayor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CondicionesParser.Estrategias.OperadorMayor</Value>
+    </Setting>
+    <Setting Name="Distinto" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CondicionesParser.Estrategias.OperadorMayor</Value>
+    </Setting>
+    <Setting Name="Igual" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CondicionesParser.Estrategias.OperadorIgual</Value>
+    </Setting>
+    <Setting Name="Menor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CondicionesParser.Estrategias.OperadorMenor</Value>
+    </Setting>
+    <Setting Name="MayorIgual" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CondicionesParser.Estrategias.OperadorMayorIgual</Value>
+    </Setting>
+    <Setting Name="MenorIgual" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CondicionesParser.Estrategias.OperadorMenorIgual</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

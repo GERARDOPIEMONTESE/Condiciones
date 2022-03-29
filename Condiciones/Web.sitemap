@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="~/Default.aspx"  >
+    <!-- Menú Cláusulas -->
+    <siteMapNode title="Cláusulas">
+      <siteMapNode url="~/ListaDeClausulas.aspx" title="Lista de Cláusulas">
+        <siteMapNode url="~/InformacionDeClausula.aspx" title="Información de Cláusulas"  />
+      </siteMapNode>
+      <siteMapNode url="~/GrupoClausulas/ListaDeGrupoClausulas.aspx" title="Lista de Grupos de Cláusulas">
+        <siteMapNode url="~/GrupoClausulas/GrupoClausula_Clausulas.aspx" title="Grupo de Cláusulas: Cláusulas" />
+        <siteMapNode url="~/GrupoClausulas/GrupoClausula_Datos.aspx" title="Grupo de Cláusulas: Datos" />
+        <siteMapNode url="~/GrupoClausulas/GrupoClausula_InformacionAdicional.aspx" title="Grupo de Cláusulas: Información Adicional" />
+      </siteMapNode>
+    </siteMapNode>
+    <!-- Menú Textos -->
+    <siteMapNode title="Textos">
+      <siteMapNode url="~/Textos/ListaDeTexto.aspx" title="Lista de Textos" />
+      <siteMapNode url="~/Textos/InformacionDeTexto.aspx" title="Información de Texto" />
+      <siteMapNode url="~/Textos/ListaDeTexto.aspx?TipoTexto=RESUMEN" title="Resumen Beneficios">
+        <siteMapNode url="~/Textos/InformacionDeTexto.aspx?TipoTexto=RESUMEN" title="Información de Textos" />
+      </siteMapNode>
+      <siteMapNode url="~/Textos/ListaDeTexto.aspx?TipoTexto=CLAUSULAS" title="Cláusulas">
+        <siteMapNode url="~/Textos/InformacionDeTexto.aspx?TipoTexto=CLAUSULAS" title="Información de Textos" />
+      </siteMapNode>
+    </siteMapNode>
+    <!-- Menú Modificaciones Masivas -->
+    <siteMapNode title="Modificaciones Masivas">
+      <siteMapNode url="~/ProcesosMasivos/ListaDeGruposClausulasMasiva.aspx" title="Lista masiva de Grupos de Cláusulas" />
+      <siteMapNode url="~/ProcesosMasivos/ListaDeGruposClausulasMasiva.aspx?documento=1" title="Documentos" />
+      <siteMapNode url="~/ProcesosMasivos/ListaDeGruposClausulasMasiva.aspx?texto=1" title="Texto Resumen" />
+      <siteMapNode url="~/ProcesosMasivos/ListaDeGruposClausulasMasiva.aspx?contenido=1" title="Contenido General" />
+    </siteMapNode>
+    <!-- Menú Documentos -->
+    <siteMapNode title="Documentos">
+      <siteMapNode url="~/Documento/ListaDeDocumentos.aspx" title="Lista de Documentos">
+        <siteMapNode url="~/Documento/InformacionDeDocumento.aspx" title="Información de Documento" />
+        <siteMapNode url="~/Documento/DescargaDeDocumento.aspx" title="Descargar Documento" />
+      </siteMapNode>
+    </siteMapNode>
+    <!-- Menú Consultas -->
+    <siteMapNode title="Consultas">
+      <siteMapNode url="~/Consulta/ListaDeGrupoCondiciones.aspx" title="Lista de Grupo de Condiciones">
+        <siteMapNode url="~/Consulta/InformacionGrupoCondiciones.aspx" title="Información de Grupo de Condiciones" />
+      </siteMapNode>
+    </siteMapNode>
+    <!--Menú Administradores-->
+    <siteMapNode title="Administrador">
+      <siteMapNode url="~/Admin/ListaDeAdministrador.aspx" title="Lista de Administradores">
+        <siteMapNode url="~/Admin/InformacionDeAdministrador.aspx" title="Información de Administradores" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/ListaDeProductos.aspx" title="Lista de Productos" >
+        <siteMapNode url="~/Admin/InformacionDeProducto.aspx" title="Información de Productos"/>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/ListaDeTarifas.aspx" title="Lista de Tarifas">
+        <siteMapNode url="~/Admin/InformacionDeTarifa.aspx" title="Información de Tarifas"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/ListaDeCompaniasDeSeguro.aspx" title="Lista de Compañías de Seguro">
+        <siteMapNode url="~/Admin/InformacionDeCompaniasDeSeguro.aspx" title="Información de Compañías de Seguro"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/RiesgosDeTerceros.aspx" title="Lista de Riesgo de Terceros">
+        <siteMapNode url="~/Admin/RiesgoDeTercerosAdd.aspx" title="Información Riesgo de Terceros"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+  
+    
+    <siteMapNode url="~/InformacionDeGrupoClausulas.aspx" title="Información de Grupo de Cláusulas" />
+    <siteMapNode url="~/InformacionDeAsociacionDocumento.aspx" title="Asociación de Documentos" />
+  </siteMapNode>
+</siteMap>

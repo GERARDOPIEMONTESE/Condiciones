@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69A05AF6-FEC6-4E19-9D5F-DF62C3864BB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CondicionesMigracion</RootNamespace>
+    <AssemblyName>CondicionesMigracion</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACNetDatos\DAOClausulaACNET.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACNetDatos\DAOClausulaCodigoPaisGrupo.cs" />
+    <Compile Include="ACNetDatos\DAOClausulaDato.cs" />
+    <Compile Include="ACNetDatos\DAOClausulaLeyenda.cs" />
+    <Compile Include="ACNetDatos\DAOClausulaPaisGrupo.cs" />
+    <Compile Include="ACNetDatos\DAOClausulaTarifaGrupo.cs" />
+    <Compile Include="ACNetDatos\DAOClausulaTexto.cs" />
+    <Compile Include="ACNetDatos\DAOGrupoPais.cs" />
+    <Compile Include="ACNetDatos\DAOMoneda.cs" />
+    <Compile Include="ACNetDatos\DAOProductoACNET.cs" />
+    <Compile Include="ACNetDatos\DAOTarifaACNET.cs" />
+    <Compile Include="ACNetDatos\DAOTextoResumen.cs" />
+    <Compile Include="ACNetDatos\DAOUnidadMedicion.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoAge.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoCancelacion.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoCompuesto.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoCondicional.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoConsulta.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoContainer.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoDias.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoEdad.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoEuro.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoEuroAE.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoEuroTotal.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoGeneral.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoIncluye.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoIndemnizacion.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoJapan.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoMVIncluye.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoPorcentaje.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoPreposicion.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoRegular.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoRubro.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoSeguro.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoSimple.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoTexto.cs" />
+    <Compile Include="ACNetFormatos\ConversorFormatoValidezTerritorial.cs" />
+    <Compile Include="ACNetFormatos\IConversorFormato.cs" />
+    <Compile Include="ACNetServicio\ServicioCompatibilidadFormato.cs" />
+    <Compile Include="ACNetServicio\ServicioCompatibilidadTipoCobertura.cs" />
+    <Compile Include="ACNetServicio\ServicioMigracion.cs" />
+    <Compile Include="ACNetServicio\ServicioMigracionClausula.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACNetServicio\ServicioMigracionDocumentos.cs" />
+    <Compile Include="ACNetServicio\ServicioMigracionGrupoPaises.cs" />
+    <Compile Include="ACNetServicio\ServicioMigracionProductosTarifas.cs" />
+    <Compile Include="ACNetServicio\ServicioMigracionUpgrades.cs" />
+    <Compile Include="ACNet\ClausulaACNET.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACNet\ClausulaCodigoPaisGrupo.cs" />
+    <Compile Include="ACNet\ClausulaDato.cs" />
+    <Compile Include="ACNet\ClausulaLeyenda.cs" />
+    <Compile Include="ACNet\ClausulaPaisGrupo.cs" />
+    <Compile Include="ACNet\ClausulaTarifaGrupo.cs" />
+    <Compile Include="ACNet\ClausulaTexto.cs" />
+    <Compile Include="ACNet\GrupoPais.cs" />
+    <Compile Include="ACNet\Moneda.cs" />
+    <Compile Include="ACNet\ProductoACNET.cs" />
+    <Compile Include="ACNet\TarifaACNET.cs" />
+    <Compile Include="ACNet\TextoResumen.cs" />
+    <Compile Include="ACNet\UnidadMedicion.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Components\FrameworkDAC\FrameworkDAC.csproj">
+      <Project>{E2DB7052-77F4-4E32-A478-1989B5138CD6}</Project>
+      <Name>FrameworkDAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Components\ServerDAC\ServerDAC.csproj">
+      <Project>{AD5B36CF-F3B7-4712-9677-4BE6794BA392}</Project>
+      <Name>ServerDAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Components\ServerMSG\ServerMSG.csproj">
+      <Project>{17B42611-44CB-49C7-8CA1-2981D64E4E6B}</Project>
+      <Name>ServerMSG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Components\WorkFlowLibrary\WorkFlowLibrary.csproj">
+      <Project>{8E391D64-4926-4C9B-9FFF-82676F812177}</Project>
+      <Name>WorkFlowLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Backend\BackendCondiciones.csproj">
+      <Project>{FEAB6DD3-D801-4500-B03E-65ADC1333B15}</Project>
+      <Name>BackendCondiciones</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

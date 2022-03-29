@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServicioConsultaClausulas" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServicioConsultaClausulas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ConsultaCondicionesDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Anual" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CodigoPais" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoProducto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoTarifa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConsultaPadre" nillable="true" type="tns:ConsultaCondicionesDTO" />
+      <xs:element minOccurs="0" name="Edad" type="xs:int" />
+      <xs:element minOccurs="0" name="IdTipoModalidad" type="xs:int" />
+      <xs:element minOccurs="0" name="IdTipoPlan" type="xs:int" />
+      <xs:element minOccurs="0" name="Upgrades" nillable="true" type="tns:ArrayOfConsultaCondicionesUpgradeDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultaCondicionesDTO" nillable="true" type="tns:ConsultaCondicionesDTO" />
+  <xs:complexType name="ArrayOfConsultaCondicionesUpgradeDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsultaCondicionesUpgradeDTO" nillable="true" type="tns:ConsultaCondicionesUpgradeDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsultaCondicionesUpgradeDTO" nillable="true" type="tns:ArrayOfConsultaCondicionesUpgradeDTO" />
+  <xs:complexType name="ConsultaCondicionesUpgradeDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Categoria" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoTarifa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoUpgrade" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultaCondicionesUpgradeDTO" nillable="true" type="tns:ConsultaCondicionesUpgradeDTO" />
+  <xs:complexType name="GruposClausulaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Grupos" nillable="true" type="tns:ArrayOfGrupoClausulaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GruposClausulaDTO" nillable="true" type="tns:GruposClausulaDTO" />
+  <xs:complexType name="ArrayOfGrupoClausulaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GrupoClausulaDTO" nillable="true" type="tns:GrupoClausulaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupoClausulaDTO" nillable="true" type="tns:ArrayOfGrupoClausulaDTO" />
+  <xs:complexType name="GrupoClausulaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Anual" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Clausulas" nillable="true" type="tns:ArrayOfContenidoClausulaDTO" />
+      <xs:element minOccurs="0" name="DiasConsecutivos" type="xs:int" />
+      <xs:element minOccurs="0" name="Documentos" nillable="true" type="tns:ArrayOfDocumentoDTO" />
+      <xs:element minOccurs="0" name="IdLocacion" type="xs:int" />
+      <xs:element minOccurs="0" name="Tarifas" nillable="true" type="tns:ArrayOfTarifaDTO" />
+      <xs:element minOccurs="0" name="Texto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoGrupoClausula" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GrupoClausulaDTO" nillable="true" type="tns:GrupoClausulaDTO" />
+  <xs:complexType name="ArrayOfContenidoClausulaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContenidoClausulaDTO" nillable="true" type="tns:ContenidoClausulaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContenidoClausulaDTO" nillable="true" type="tns:ArrayOfContenidoClausulaDTO" />
+  <xs:complexType name="ContenidoClausulaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Clausula" nillable="true" type="tns:ClausulaDTO" />
+      <xs:element minOccurs="0" name="CodigoTipoImpresionClausula" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CondicionesEvaluacion" nillable="true" type="tns:ArrayOfCondicionEvaluacion" />
+      <xs:element minOccurs="0" name="EvaluableEnAsistencia" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Padres" nillable="true" type="tns:ArrayOfContenidoClausulaDTO" />
+      <xs:element minOccurs="0" name="Rangos" nillable="true" type="tns:ArrayOfContenidoClausulaRangoDTO" />
+      <xs:element minOccurs="0" name="TipoCobertura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisibleEnAsistencia" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContenidoClausulaDTO" nillable="true" type="tns:ContenidoClausulaDTO" />
+  <xs:complexType name="ClausulaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClausulaIdioma" nillable="true" type="tns:ArrayOfClausulaIdiomaDTO" />
+      <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoTipoClausula" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreTipoClausula" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClausulaDTO" nillable="true" type="tns:ClausulaDTO" />
+  <xs:complexType name="ArrayOfClausulaIdiomaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClausulaIdiomaDTO" nillable="true" type="tns:ClausulaIdiomaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClausulaIdiomaDTO" nillable="true" type="tns:ArrayOfClausulaIdiomaDTO" />
+  <xs:complexType name="ClausulaIdiomaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdIdioma" type="xs:int" />
+      <xs:element minOccurs="0" name="Texto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClausulaIdiomaDTO" nillable="true" type="tns:ClausulaIdiomaDTO" />
+  <xs:complexType name="ArrayOfCondicionEvaluacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CondicionEvaluacion" nillable="true" type="tns:CondicionEvaluacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCondicionEvaluacion" nillable="true" type="tns:ArrayOfCondicionEvaluacion" />
+  <xs:complexType name="CondicionEvaluacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoDato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CondicionEvaluacion" nillable="true" type="tns:CondicionEvaluacion" />
+  <xs:complexType name="ArrayOfContenidoClausulaRangoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContenidoClausulaRangoDTO" nillable="true" type="tns:ContenidoClausulaRangoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContenidoClausulaRangoDTO" nillable="true" type="tns:ArrayOfContenidoClausulaRangoDTO" />
+  <xs:complexType name="ContenidoClausulaRangoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Categoria" type="xs:int" />
+      <xs:element minOccurs="0" name="Contenido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EdadMaxima" type="xs:int" />
+      <xs:element minOccurs="0" name="EdadMinima" type="xs:int" />
+      <xs:element minOccurs="0" name="IdValidezTerritorial" type="xs:int" />
+      <xs:element minOccurs="0" name="IdValidezTerritorialClausula" type="xs:int" />
+      <xs:element minOccurs="0" name="Leyendas" nillable="true" type="tns:ArrayOfLeyendaDTO" />
+      <xs:element minOccurs="0" name="TipoModalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPlan" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContenidoClausulaRangoDTO" nillable="true" type="tns:ContenidoClausulaRangoDTO" />
+  <xs:complexType name="ArrayOfLeyendaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LeyendaDTO" nillable="true" type="tns:LeyendaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeyendaDTO" nillable="true" type="tns:ArrayOfLeyendaDTO" />
+  <xs:complexType name="LeyendaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdIdioma" type="xs:int" />
+      <xs:element minOccurs="0" name="Texto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeyendaDTO" nillable="true" type="tns:LeyendaDTO" />
+  <xs:complexType name="ArrayOfDocumentoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentoDTO" nillable="true" type="tns:DocumentoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentoDTO" nillable="true" type="tns:ArrayOfDocumentoDTO" />
+  <xs:complexType name="DocumentoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoValidacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentoDimension" type="xs:int" />
+      <xs:element minOccurs="0" name="DocumentoTipoContenido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdDocumento" type="xs:int" />
+      <xs:element minOccurs="0" name="IdTipoDocumento" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentoDTO" nillable="true" type="tns:DocumentoDTO" />
+  <xs:complexType name="ArrayOfTarifaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TarifaDTO" nillable="true" type="tns:TarifaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTarifaDTO" nillable="true" type="tns:ArrayOfTarifaDTO" />
+  <xs:complexType name="TarifaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoPais" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoProducto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoTarifa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sufijo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TarifaDTO" nillable="true" type="tns:TarifaDTO" />
+</xs:schema>

@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Condiciones.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Ubicacion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:/Desarrollo_F4/Condiciones/CondicionesParser/</Value>
+    </Setting>
+    <Setting Name="Condiciones_com_assist_card_serviciocondiciones_ServicioClausulasWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://serviciocondiciones.assist-card.com/ServicioClausulasWS.asmx</Value>
+    </Setting>
+    <Setting Name="Condiciones_ClausulasWSPreProd_ServicioClausulasWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://benefitsws.pre.assist-card.com/ServicioClausulasWS.asmx</Value>
+    </Setting>
+    <Setting Name="Condiciones_ClausulasWSLocalHost_ServicioClausulasWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:4736/ServicioClausulasWS.asmx</Value>
+    </Setting>
+    <Setting Name="Condiciones_ClausulasWSTest_ServicioClausulasWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://benefitsws.dev.assist-card.com/ServicioClausulasWS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
